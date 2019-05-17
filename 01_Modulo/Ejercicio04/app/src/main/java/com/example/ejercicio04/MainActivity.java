@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         checkBoxC=(CheckBox)findViewById(R.id.checkBoxCursiva);
         checkBoxN=(CheckBox)findViewById(R.id.checkBoxNegrita);
 
+
+
+    }
+    public void funcion(View v){
         if (checkBoxN.isChecked()) {
             Texto.setTypeface(null, Typeface.BOLD);
             Toast.makeText(this, "Se marcó", Toast.LENGTH_LONG).show();
@@ -32,6 +36,5 @@ public class MainActivity extends AppCompatActivity {
             Texto.setTypeface(null, Typeface.BOLD_ITALIC);
         }else
             Texto.setTypeface(null, Typeface.NORMAL);
-
     }
 }

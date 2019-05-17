@@ -38,6 +38,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="300dp"
         android:text="Cursiva"
+        android:onClick="funcion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edTexto" />
@@ -50,6 +51,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="300dp"
         android:text="Negrita"
+        android:onClick="funcion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxCursiva" />
