@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         edTexto=(EditText) findViewById(R.id.edTexto);
         spinner=(Spinner)findViewById(R.id.spinner);
         //
-        String []opciones={"Negrita","Cursiva","NegritaCursiva"};
+        String []opciones={"Normal","Negrita","Cursiva","NegritaCursiva"};
         //Adapter
         ArrayAdapter<String>adaptador=new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, opciones);
         //Modelos
@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(MainActivity.this,"Se presionó", Toast.LENGTH_LONG.show();
                 String opcion = spinner.getSelectedItem().toString();
                 switch (opcion){
+                    case "Normal":
+                        edTexto.setTypeface(null, Typeface.NORMAL);
+                        break;
                     case "Negrita":
                         edTexto.setTypeface(null, Typeface.BOLD);
                         break;

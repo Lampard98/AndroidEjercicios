@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void funcion(View v){
-        if (checkBoxN.isChecked()) {
+        if (checkBoxN.isChecked()==true && checkBoxC.isChecked()==false) {
             Texto.setTypeface(null, Typeface.BOLD);
             Toast.makeText(this, "Se marcó", Toast.LENGTH_LONG).show();
-        } else if (checkBoxC.isChecked()) {
+        }else if (checkBoxN.isChecked() && checkBoxC.isChecked()) {
+                Texto.setTypeface(null, Typeface.BOLD_ITALIC);
+        } else if (checkBoxC.isChecked()==true && checkBoxN.isChecked()==false) {
             Texto.setTypeface(null, Typeface.ITALIC);
-        } else if (checkBoxN.isChecked() && checkBoxC.isChecked()) {
-            Texto.setTypeface(null, Typeface.BOLD_ITALIC);
         }else
             Texto.setTypeface(null, Typeface.NORMAL);
     }
