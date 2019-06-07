@@ -27,12 +27,18 @@ public class MainActivity extends AppCompatActivity {
         Cursos c1 = new Cursos();
         c1.setNombre("Moviles");
         c1.setPorcentaje(20);
+        c1.setId(1);
+
         Cursos c2 = new Cursos();
         c2.setNombre("Base de Datos");
         c2.setPorcentaje(30);
+        c2.setId(2);
+
         Cursos c3 = new Cursos();
         c3.setNombre("Paginas Web");
         c3.setPorcentaje(30);
+        c3.setId(3);
+
         List<Cursos>lista =new ArrayList<>();
         lista.add(c1);
         lista.add(c2);
